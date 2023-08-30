@@ -73,11 +73,17 @@
                 </div>
                 <div class="col-md-8">
                     <p>
-                        I am senior sofware engineering student in my last quarter at Oregon State University, and I am currently seeking new job opprotunities. My education at OSU has
-                        given me the opprotunity to touch many different fields of computer science, from Assembly Language to Object Oriented Programming to Mobile App Development. I 
-                        absolutely love coding, and have been looking towards going into this field for sometime. Wherever I get my start in computer science, I know I will make a positive
-                        impact on that organization, as I am eager to learn.  Please do not hesitate to contact me if you have any questions on my resume, which you
-                        can find linked above.  
+                        
+                        I am currently a Software Developer at General Motors, where I work on the Advanced Vehicle Inventory Platform. While working at General Motors, I have had the opportunity to work on
+                        various projects that have increased the company's profits and cut costs. I upgraded a monolithic Java application to a microservice architecture using
+                        spring boot as the main framework for the majority of my work. ElasticSearch was the main database used due to the needs for optimal search performance, given the millions of queries
+                        per day hitting the various vehicle inventory search endpoints. However, after recently upgrading the vehicle ingestion pipeline, PostGresSQL is also used with functions and tables to prioritize
+                        and aggregate data. The main method of triggering ingestion of a vehicle and initiating the various enhancement microservices is through Kafka driven events. Based on various
+                        business defined criteria, these vehicles could take a very different path of enhancement based on: vehicle condition, country, zip code, dealership, make, model, and year.
+                        I utilized Kubernetes/Azure to manage and orchestrate the deployments and scale the pods as needed. I have regularly participated in critical application support calls,
+                        and have found numerous resolutions to bugs that have resolved clients issues. One of my favorite things to do is discover the root cause of a problem or bug
+                        in order to provide an optimal solution.
+
                     </p>
                 </div>
             </div>
@@ -88,6 +94,23 @@
     <div id="experience" class="background-alt">
         <h2 class="heading">Experience</h2>
         <div id="experience-timeline">
+            <div data-date="May 2021 - Present">
+                <h3>General Motors	</h3>
+                <h4>Software Developer </h4>
+                <p>
+                    - Spearheaded effort to upgrade vehicle inventory APIs offered to customers that provided them a means to view inventory which led to effective inventory management/ordering.</p>
+                    <p>- Led the effort to upgrade our CVD microservice to more efficiently aggregate/store vehicle option data using: Java, Spring Boot, Kubernetes, SQL, ElasticSearch, and Kafka. This led to cost savings for our organization as we reduced the number of calls to an endpoint we paid for.</p> 
+                    <p>- Interfaced with various internal/external business units to drive requirements for my team.</p>
+                    <p>- Collaborated on a new Kafka implementation that allowed for a more holistic API for multiple departments within the GM organization to utilize the underlying architecture.</p>
+                    <p>- Refactored PostGres views, tables, and functions to increase efficiency within the DB by reducing query time and needed storage space. </p>
+                    <p>- Wrote python scripts to test various endpoints which led to less manual validation work.</p>
+                    <p>- Onboarded and trained new developers by doing code reviews, pair programming and mentoring</p>
+                    <p>- Increased code coverage for unit tests in enhancement services repo from 60% to 95% in a sprint resulting in increased confidence in future code additions.</p>
+                    <p>- Regularly presented on the top upcoming features in the latest application releases.</p>
+                    <p>- Provided on-call bug support utilizing tools such as: DynaTrace, Kibana, and OpenSearch.</p>
+
+                
+            </div>
             <div data-date="July 2018 - August 2020">
                 <h3>Karl Strauss Brewing Company	</h3>
                 <h4>Recruiter </h4>
@@ -112,15 +135,6 @@
                     <p>- Interviewed candidates in person and went over the company culture and job description.</p>
                     <p>- Negotiated salaries and extended job offers to candidates.     </p>                               
                 </p>
-            </div>
-
-            <div data-date="June 2015-August 2016">
-                <h3>Asis Physical Therapy</h3>
-                <h4>Physical Therapy Assistant </h4>
-                <p>
-                    - Instructed patients on how to perform customized exercise plans designed for their rehabilitation.</p>
-                    <p>- Setup patients with various healing modalities for muscle relief.</p>
-                
             </div>
         </div>
     </div>
